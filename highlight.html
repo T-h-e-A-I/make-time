@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/6cb1ca5b5d.js" crossorigin="anonymous"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dosis&family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <title>Highlight</title>
+    <style>
+        i {
+            margin-right: 10px;
+        }
+
+        * {
+            font-family: 'Dosis', sans-serif;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .highlight {
+            background-color: #3ee0e6;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: inline-block;
+            color: black;
+            text-align: center;
+            padding: 5px 5px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-wrapper yellow ">
+            <a href="#" class="brand-logo right black-text text-darken-2">Make Time</a>
+            <ul id="nav-mobile" class="left hide-on-med-and-down">
+                <li><a class="right black-text text-darken-2" href="/">Home</a></li>
+                <li><a class="right black-text text-darken-2" href="page2">Tactics</a></li>
+                <li><a class="right black-text text-darken-2" href="page3">Add Highlight</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="row">
+        <div class="col s12">
+            <div class="card highlight darken-1">
+                <div class="card-content white-text">
+                    <span class="card-title black-text"><b>Today's Highlight</b></span>
+                    <p id="today-highlight">{{highlight}}</p>
+                </div>
+                <div class="card-content">
+                    <h6>Tactics tried today: </h6>
+                    <p>{{tactic}}</p>
+                    <h6>Tactics to try tomorrow: </h6>
+                    <p>{{tactic2}}</p>
+                </div>
+                <hr class="black">
+                <div class="card-action">
+                    <div class="row">
+                        <p class="col s6"><b>Energy Level: </b>{{energy}}</p>
+                        <p class="col s6"><b>Focus Level: </b>{{laser}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+<footer class="page-footer yellow black-text">
+    <div class="container black-text">
+        <div class="row">
+            <div class="col l6 s12">
+                <h5 class="black-text">Created By</h5>
+                <p class="black-text text-lighten-4">Awesh Islam
+                </p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+                <h5 class="black-text">Links</h5>
+                <ul class="links">
+                    <li><a href="https://www.facebook.com/aweshrumcndc.1100100" target="_blank" type="button"> </a><i
+                            class="fa-brands fa-facebook fa-2xl"></i></li>
+                    <li><i class="fa-brands fa-github fa-2xl"></i></li>
+                    <li><i class="fa-brands fa-youtube fa-2xl"></i></li>
+                    <li><i class="fa-brands fa-linkedin-in fa-2xl"></i></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container black-text">
+            © 2023 Copyright Text
+            <a class="black-text text-lighten-4 right" href="#!">More Links</a>
+        </div>
+    </div>
+</footer>
+
+</html>
